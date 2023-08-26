@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+  background-image: url(../../money4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.management-system .income .btn, .management-system .income input {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.management-system table, .management-system .income .btn, .management-system .income input {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.management-system {
+  width: 100%;
+  position: relative;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+.management-system .overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: -1;
+}
+.management-system h1 {
+  color: rgb(111, 220, 254);
+  padding: 30px;
+  font-size: 60px;
+}
+.management-system .income {
+  text-align: center;
+}
+.management-system .income input {
+  font-size: 20px;
+  background-color: rgb(200, 199, 199);
+  padding: 10px;
+  border: none;
+}
+.management-system .income input:focus {
+  outline: none;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  background-color: black;
+  color: white;
+  border: 3px solid rgb(111, 220, 254);
+}
+.management-system .income input:focus::-moz-placeholder {
+  opacity: 0.4;
+}
+.management-system .income input:focus:-ms-input-placeholder {
+  opacity: 0.4;
+}
+.management-system .income input:focus::placeholder {
+  opacity: 0.4;
+}
+.management-system .income input::-moz-placeholder {
+  opacity: 0.6;
+}
+.management-system .income input:-ms-input-placeholder {
+  opacity: 0.6;
+}
+.management-system .income input::placeholder {
+  opacity: 0.6;
+}
+.management-system .income .btn {
+  padding: 10px 20px;
+  background-color: #000;
+  border: 2px solid rgb(244, 244, 249);
+  text-transform: uppercase;
+  margin-left: 20px;
+  color: rgb(244, 244, 249);
+  cursor: pointer;
+  font-size: 18px;
+}
+.management-system .income .btn:hover {
+  border-color: rgb(111, 220, 254);
+  color: rgb(111, 220, 254);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.management-system table {
+  margin-top: 40px;
+  background-color: rgba(65, 135, 161, 0.295);
+  padding: 20px;
+}
+.management-system table thead tr {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.management-system table tbody tr td {
+  color: rgb(111, 220, 254);
+  font-weight: bold;
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */

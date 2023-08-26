@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Money Management</title>
+    <style>
+        /* table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="loader-container"></div>
+
+    <div class="management-system">
+        <div class="overlay"></div>
+        <h1>money management system$</h1>
+        <div class="system">
+            <div class="income">
+                <input type="number" placeholder="Enter Your Salary" id="input">
+                <button class="btn" id="btn">create</button>
+            </div>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>مصروفات شهرية %60</th>
+                        <th>صدقات %10</th>
+                        <th>مكافآت %10</th>
+                        <th>مدخرات %10</th>
+                        <th>طوارئ %10</th>
+                    </tr>
+                    <!-- <tr>
+                        <th>monthly expenses 60%</th>
+                        <th>charity 10%</th>
+                        <th>rewards 10%</th>
+                        <th>savings 10%</th>
+                        <th>emergency 10%</th>
+                    </tr> -->
+                </thead>
+                <tbody id="table-body">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
