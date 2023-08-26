@@ -15,8 +15,14 @@ let newRow = document.createElement("tr");
 5- Display the numbers under the thead elements
 */
 // function accepts a number
-
-btn.addEventListener("click", () => enterNumber())
+btn.addEventListener("click", () => {
+    if (input.value === "") {
+        input.placeholder = "Please enter a number"
+        input.focus();
+    } else {
+        enterNumber();
+    }
+})
 function enterNumber() {
     let main = Math.ceil(input.value * .6);
     let remain = Math.ceil(input.value * .1);

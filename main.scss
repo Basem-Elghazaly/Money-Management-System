@@ -79,7 +79,7 @@ body {
     padding: 30px;
     font-size: 60px;
     @include breakpoints(verySmall) {
-      font-size: 22px;
+      font-size: 16px;
     }
     @include breakpoints(mobile) {
       font-size: 28px;
