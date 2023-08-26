@@ -14,7 +14,29 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+@mixin breakpoints($width) {
+  @if $width == verySmall {
+    @media (max-width: 494px) {
+      @content;
+    }
+  } @else if $width == mobile {
+    @media (min-width: 495px) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $width == small {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $width == medium {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $width == large {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+}
 //
 %main_transition {
   transition: 0.3s;
@@ -56,6 +78,18 @@ body {
     color: rgb(111, 220, 254);
     padding: 30px;
     font-size: 60px;
+    @include breakpoints(verySmall) {
+      font-size: 18px;
+    }
+    @include breakpoints(mobile) {
+      font-size: 28px;
+    }
+    @include breakpoints(small) {
+      font-size: 35px;
+    }
+    @include breakpoints(medium) {
+      font-size: 45px;
+    }
   }
   .income {
     text-align: center;
@@ -83,6 +117,16 @@ body {
       &::placeholder {
         opacity: 0.6;
       }
+      @include breakpoints(verySmall) {
+        font-size: 16px;
+        display: block;
+        margin: auto auto 30px;
+      }
+      @include breakpoints(mobile) {
+        font-size: 18px;
+        display: block;
+        margin: auto auto 30px;
+      }
     }
     .btn {
       padding: 10px 20px;
@@ -105,6 +149,14 @@ body {
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
       }
+      @include breakpoints(mobile) {
+        font-size: 16px;
+        margin: 0;
+      }
+      @include breakpoints(verySmall) {
+        font-size: 14px;
+        margin: 0;
+      }
     }
   }
   table {
@@ -118,6 +170,9 @@ body {
       gap: 30px;
       font-size: 18px;
       margin-bottom: 20px;
+      @include breakpoints(verySmall) {
+        // flex-direction: column;
+      }
     }
     tbody tr td {
       color: rgb(111, 220, 254);

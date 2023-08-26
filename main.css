@@ -57,6 +57,26 @@ body {
   padding: 30px;
   font-size: 60px;
 }
+@media (max-width: 494px) {
+  .management-system h1 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 495px) and (max-width: 767px) {
+  .management-system h1 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .management-system h1 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .management-system h1 {
+    font-size: 45px;
+  }
+}
 .management-system .income {
   text-align: center;
 }
@@ -95,6 +115,20 @@ body {
 .management-system .income input::placeholder {
   opacity: 0.6;
 }
+@media (max-width: 494px) {
+  .management-system .income input {
+    font-size: 16px;
+    display: block;
+    margin: auto auto 30px;
+  }
+}
+@media (min-width: 495px) and (max-width: 767px) {
+  .management-system .income input {
+    font-size: 18px;
+    display: block;
+    margin: auto auto 30px;
+  }
+}
 .management-system .income .btn {
   padding: 10px 20px;
   background-color: #000;
@@ -113,6 +147,18 @@ body {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
+}
+@media (min-width: 495px) and (max-width: 767px) {
+  .management-system .income .btn {
+    font-size: 16px;
+    margin: 0;
+  }
+}
+@media (max-width: 494px) {
+  .management-system .income .btn {
+    font-size: 14px;
+    margin: 0;
+  }
 }
 .management-system table {
   margin-top: 40px;
