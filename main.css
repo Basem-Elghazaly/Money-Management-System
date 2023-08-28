@@ -12,6 +12,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 494px) {
+  body {
+    overflow: hidden;
+    background-image: url("./money2.png");
+  }
+}
 
 .management-system .income .btn, .management-system .income input {
   transition: 0.3s;
@@ -30,7 +36,6 @@ body {
 }
 
 .management-system {
-  width: 100%;
   position: relative;
   color: white;
   width: -webkit-fit-content;
@@ -52,6 +57,14 @@ body {
   background: rgba(0, 0, 0, 0.85);
   z-index: -1;
 }
+@media (max-width: 494px) {
+  .management-system .overlay {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
 .management-system h1 {
   color: rgb(111, 220, 254);
   padding: 30px;
@@ -59,12 +72,14 @@ body {
 }
 @media (max-width: 494px) {
   .management-system h1 {
-    font-size: 16px;
+    text-align: center;
+    font-size: 24px;
   }
 }
 @media (min-width: 495px) and (max-width: 767px) {
   .management-system h1 {
-    font-size: 28px;
+    text-align: center;
+    font-size: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -161,24 +176,42 @@ body {
   }
 }
 .management-system table {
+  text-align: center;
   margin-top: 40px;
   background-color: rgba(65, 135, 161, 0.295);
   padding: 20px;
 }
-.management-system table thead tr {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-@media (max-width: 494px) {
-  .management-system table thead tr {
-    gap: 15px;
+@media (min-width: 495px) and (max-width: 767px) {
+  .management-system table {
+    padding: 15px;
   }
 }
-.management-system table tbody tr td {
+.management-system table tbody tr th {
+  padding: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: rgb(111, 220, 254);
-  font-weight: bold;
   font-size: 20px;
+}
+@media (max-width: 494px) {
+  .management-system table tbody tr th {
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .management-system table tbody tr th {
+    padding: 13px;
+  }
+}
+@media (min-width: 495px) and (max-width: 767px) {
+  .management-system table tbody tr th {
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+
+.un-visible {
+  visibility: hidden;
 }/*# sourceMappingURL=main.css.map */
