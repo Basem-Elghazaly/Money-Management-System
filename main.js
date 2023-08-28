@@ -15,6 +15,7 @@ tableBody.appendChild(row);
 */
 // function accepts a number
 // tableBody.appendChild(newRow);
+// btn.addEventListener("keydown", enterKeyPressed());
 btn.addEventListener("click", () => {
     if (input.value === "") {
         input.placeholder = "Please enter a number"
@@ -25,8 +26,8 @@ btn.addEventListener("click", () => {
 })
 
 function enterNumber() {
-    let main = Math.ceil(input.value * .6);
-    let remain = Math.ceil(input.value * .1);
+    let main = Math.round(input.value * .6 * 10) / 10;
+    let remain = Math.round(input.value * .1 * 10) / 10;
     row.innerHTML = `
     <td>${main}</td>
     <td>${remain}</td>
@@ -41,7 +42,7 @@ function enterNumber() {
 
 // Clearing the input
 function clearInput() {
-    input.value = "";
+    // input.value = "";
     input.placeholder = "Try another salary"
 }
 
