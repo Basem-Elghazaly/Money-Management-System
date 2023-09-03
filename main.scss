@@ -25,7 +25,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -34,6 +33,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+
   @include breakpoints(verySmall) {
     overflow: hidden;
     background-image: url("./money2.png");
